@@ -49,7 +49,7 @@ export default function Home() {
       {products.map((product) => (
         <div key={product.id} className="bg-white rounded-lg p-4 shadow-md">
           <h2 className="text-xl font-semibold text-black">{product.name}</h2>
-          <p className="text-gray-500">${product.price.toFixed(2)}</p>
+          <p className="text-gray-500">{product.price.toFixed(2)}</p>
           <p className="mt-2 text-black">{product.description}</p>
         </div>
       ))}
